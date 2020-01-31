@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textCep"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
+    tools:context=".ConsultaCep">
+
+
+    <EditText
+        android:id="@+id/textInseriCep"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="CEP"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/bntBuscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bntBuscar"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="50dp"
+        android:background="#ffffff"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInseriCep"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="50dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textInseriCep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
